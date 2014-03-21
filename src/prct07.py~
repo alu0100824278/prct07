@@ -1,0 +1,14 @@
+#!/usr/bin/python
+PI=3.1415926535897931159979634685441852
+import sys
+import modulo1
+
+valores = (10,10e+02,10e+03,10e+04)
+#Esto es una t-upla , ya que contiene una lista de valores constantes. Asi la fun_pi se ejecutara con estos valores.# 
+for valor in (valores):
+  y = modulo1.fun_pi(valor)
+  print '%g' % y
+#  El numero maximo de la t-upla depende de los valores que yo quiera introducir en la lista de valores, que son constantes
+#  Se producen errores de memoria para aquellos valores que no sean constantes o no esten definidos
+#  Si se pueden poner en notacion cientifica, por ejemplo, el numero 10000 se puede escribir como 10e+4
+#  La extension .pyc corresponde con el codigo compilado. Si hemos importado un modulo en este codigo, se creara un archivo .pyc que contenga el codigo para hacer la importacion 
